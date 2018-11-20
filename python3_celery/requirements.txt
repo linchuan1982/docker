@@ -1,4 +1,0 @@
-youtube-dl
-requests
-celery
-shadowsocks
