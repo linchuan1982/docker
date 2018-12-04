@@ -1,0 +1,13 @@
+version: "3.1"
+services:
+  webapp:
+    image: linchuan/p3-web
+    build:
+      context: /data/code
+      dockerfile: /home/hunch/docker/python_web/p3_web/Dockerfile
+    ports:
+      - "8080:8000"
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - "/data/lib:/data"
+    container_name: web-container
